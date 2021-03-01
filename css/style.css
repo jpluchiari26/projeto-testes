@@ -12,7 +12,7 @@
 }
 /* CABECALHO */
 .cabecalho {
-    background: #611003;
+    background: red;/*611003*/
     box-sizing: border-box;
     height: 100px ;
     width: 100%;
