@@ -1,0 +1,225 @@
+:root {
+    --corpo: font-family: 'Open Sans', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+.container {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+/* principal */
+.principal {
+    margin-top: 1.5rem;
+}
+/* CABECALHO */
+.cabecalho {
+    background: #611003;
+    box-sizing: border-box;
+    height: 100px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho img {
+    width: 103px;
+    margin-top: 0.725rem ;
+}
+.cabecalho_nav {
+    text-align: center;
+    font-family:var(--montserrat);
+    font-size: 0.975rem;
+    margin-top: 0.925rem ;
+}
+.cabecalho_link {
+    display: inline-block;
+}
+.cabecalho_link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px;
+}
+.cabecalho_link a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Tabela */
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.937rem;
+    text-align: center;
+}
+section.tabela.container {
+    padding-left: 0;
+    margin-left: 10%;
+}
+.tabela {
+    justify-self: center;
+    margin-top: 1.875rem;  
+    width: 70vw ;
+    height: 40vh;
+    overflow: auto;    
+}
+.filtro {
+    display: flex;
+    justify-content: flex-start;
+}
+#campo-buscar, #filtrar-txt {
+   display: block;
+   margin: 10px 10px 10px 0;
+}
+#campo-buscar {
+    width: 300px;
+    border: 1px solid #611003;
+    border-radius: 5px;
+    padding: 5px;
+}
+#filtrar-txt {
+    line-height: 150%;
+    font-weight: bold;
+    color: #000;
+}
+ 
+.tabela-info tr td{
+    padding: 5px 10px 5px 10px;    
+}
+.tabela-info thead {
+    background: #611003;
+    margin: 0;
+    padding: 0;
+}
+.tabela-info th {
+    color: #fff;
+    padding: 10px;
+}
+
+/* formulário */
+.form-adiciona {
+    margin-top: 3rem ;
+}
+.form-adiciona h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.form-adiciona h2::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: #611003;
+    margin: 10px auto 0 auto;
+}
+#nome, #abilities, #weaknesses, #evolutions, #type, #category {
+    width: 100%;
+    display: block;
+    border: 1px solid #EEDDDD;
+    border-radius: 5px;
+    padding: 5px;
+    background: #EEDDDD;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    padding-bottom: 10px;
+}
+.botao {
+    width: 200px;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    background: #611003;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer{
+    height: 60px;
+    background: #611003 ;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+.invisivel {
+	display: none;
+}
+
+/* Responsivo */
+
+@media screen and (min-width:708px){
+    section.tabela.container{
+        margin-left: 0;
+        max-width: 90vw;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .cabecalho {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .cabecalho img {
+        width: 160px;
+        margin-top: 0 ;
+    }
+    h1 {
+        margin-top: 3.5rem;
+        font-size: 2.5rem;
+    }
+    .tabela {
+        width: 100vw;
+        height: auto; 
+    }
+    div.filtro{
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+    .tabela-info {
+        width: 70vw;
+        margin: 0 auto;  
+        margin-bottom: 0;     
+    }
+    .form-adiciona {
+        margin-top: 1rem;
+    }
+    .form-adiciona-info{
+        width: 40vw;
+        margin: 0 auto 3rem auto;
+    }
+    label {
+        color: #611003;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    #nome, #abilities, #weaknesses, #evolutions, #type, #category{
+        padding: 15px;
+        font-size: 1rem;
+        color: #363636;
+    }
+    .form-adiciona h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3.5rem;
+        margin-top: 3.5rem;
+    }
+    .botao {
+        margin-top: 30px;
+    }
+    .cabecalho_link a {
+        padding: 10px;
+    }
+}

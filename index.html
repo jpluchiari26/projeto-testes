@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="img/logo.svg" alt="Logo Pokemon">
+            <nav class="cabecalho_nav">
+                <ul>
+                    <li class="cabecalho_link"><a href="#">Home</a></li>
+                    <li class="cabecalho_link"><a href="#">Sobre</a></li>
+                    <li class="cabecalho_link"><a href="#">Pokemons</a></li>
+                    <li class="cabecalho_link"><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="principal">
+        <h1>Pokedex: What i know!</h1>
+    </section>
+    <section class="tabela container">
+       <div class="filtro">
+        <p id="filtrar-txt">Filtrar</p>
+        <input type="search" id="campo-buscar" placeholder="Busque o pokemon">
+       </div>
+        <table class="tabela-info" border="1">
+            <thead>
+               <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Abilities</th>
+                    <th>Weaknesses</th>
+                    <th>Evolutions</th>
+               </tr>
+            </thead>
+            <tbody id="tabela-pokemons">
+               <tr class="pokemon">
+                    <td class="info-nome">Charmander</td>
+                    <td class="info-tipo">Fire</td>
+                    <td class="info-categoria">Lizard</td>
+                    <td class="info-habilidades">Blaze</td>
+                    <td class="info-fraquezas">Water, Ground pedra and Rock</td>
+                    <td class="info-evolucoes">Charmeleon, Charizard</td>
+               </tr>
+               <tr class="pokemon">
+                    <td class="info-nome">Bulbasaur</td>
+                    <td class="info-tipo">Grass, Poison</td>
+                    <td class="info-categoria">Seed</td>
+                    <td class="info-habilidades">Overgrow</td>
+                    <td class="info-fraquezas">Fire, Psychic, Flying and Ice</td>
+                    <td class="info-evolucoes">Ivysaur, Venusaur</td>
+                </tr>  
+                <tr class="pokemon">
+                    <td class="info-nome">Pikachu</td>
+                    <td class="info-tipo">Electric</td>
+                    <td class="info-categoria">Mouse</td>
+                    <td class="info-habilidades">Static</td>
+                    <td class="info-fraquezas">Ground</td>
+                    <td class="info-evolucoes">Pichu, Pikachu, Raichu</td>
+                </tr>  
+                <tr class="pokemon">
+                    <td class="info-nome">Squirtle</td>
+                    <td class="info-tipo">Water</td>
+                    <td class="info-categoria">Tiny Turtle</td>
+                    <td class="info-habilidades">Torrent</td>
+                    <td class="info-fraquezas">Grass, Electric</td>
+                    <td class="info-evolucoes">Squirtle, Wartortle, Blastoise</td>
+                </tr>  
+            </tbody>
+        </table>  
+    </section>
+    <section class="form-adiciona container">
+        <h2>Add new Pokemon</h2>
+        <form action="#" class="form-adiciona-info" id="adiciona-pokemon-form">
+            <label for="name">Name</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="type">Type</label>
+            <input type="text" id="type" name="type">
+
+            <label for="category">Category</label>
+            <input type="text" name="category" id="category">
+
+            <label for="abilities">Abilities</label>
+            <input type="text" name="abilities" id="abilities">
+
+            <label for="weaknesses">Weaknesses</label>
+            <input type="text" name="weaknesses" id="weaknesses">
+
+            <label for="evolutions">Evolutions</label>
+            <input type="text" name="evolutions" id="evolutions">
+
+           <button type="submit" id="adicionar-pokemon" class="botao">Adicionar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Projeto de testes  - Feito por João Luchiari</p>
+    </footer>
+    <script src="js/adiciona.js"></script>
+    <script src="js/remove.js"></script>
+    <script src="js/filtrar.js"></script>
+</body>
+</html>
